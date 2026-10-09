@@ -19,7 +19,7 @@ export default function DesktopVenueQr({ hyderabadUrl }: DesktopVenueQrProps) {
       margin: 1,
       errorCorrectionLevel: 'H',
       color: {
-        dark: '#111827',
+        dark: '#000000',
         light: '#ffffff',
       },
     })
