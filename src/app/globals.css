@@ -692,8 +692,8 @@ div[data-next-badge] {
 }
 
 .action-toolbar {
-  display: flex;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
   width: 100%;
   gap: 8px;
 }
@@ -719,18 +719,6 @@ div[data-next-badge] {
   white-space: nowrap;
 }
 
-.calendar-action {
-  flex: 1.18;
-}
-
-.share-action {
-  flex: 1.02;
-}
-
-.celebrate-action {
-  flex: 0.95;
-}
-
 .action-btn:hover {
   background: #fafafa;
   border-color: rgba(0, 0, 0, 0.35);
@@ -742,6 +730,22 @@ div[data-next-badge] {
 .action-btn:active {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Red Celebrate Action Button */
+.celebrate-action {
+  background: var(--plain-red-gradient);
+  color: #ffffff;
+  border: 1.5px solid var(--plain-red);
+  box-shadow: 0 4px 14px rgba(225, 29, 36, 0.28);
+}
+
+.celebrate-action:hover {
+  background: linear-gradient(135deg, #C81E1E 0%, #B91C1C 100%);
+  color: #ffffff;
+  border-color: #B91C1C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(225, 29, 36, 0.38);
 }
 
 /* Desktop Venue QR Code Floating Companion Card */
