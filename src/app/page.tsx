@@ -8,7 +8,7 @@ import MapCard from '@/components/MapCard';
 import ActionToolbar from '@/components/ActionToolbar';
 import BottomDirectionBar from '@/components/BottomDirectionBar';
 import DesktopVenueQr from '@/components/DesktopVenueQr';
-import { IosCalendarIcon, GoogleMapsOfficialIcon } from '@/components/AppBrandIcons';
+import { IosCalendarIcon } from '@/components/AppBrandIcons';
 
 // Exact Venue Navigation in Ashok Nagar, Hyderabad
 const HYDERABAD_VENUE_MAPS_URL =
@@ -32,7 +32,7 @@ export default function InvitationPage() {
 
             {/* Main Headline */}
             <h1 className="hero-main-title">
-              Offline Centre<br />
+              Office<br />
               Inauguration
             </h1>
 
@@ -49,7 +49,7 @@ export default function InvitationPage() {
 
         {/* Inner Content Wrapper */}
         <div className="qualify-inner-content">
-          {/* 2. Unified Floating Event Card (Countdown + Date & Venue in single card) */}
+          {/* 2. Unified Floating Event Card (Countdown + Date in single card) */}
           <section className="unified-event-card" aria-label="Event Countdown and Schedule">
             {/* Top Half: Live Countdown */}
             <CountdownTimer />
@@ -57,31 +57,14 @@ export default function InvitationPage() {
             {/* Subtle Divider Line */}
             <div className="unified-card-divider" aria-hidden="true" />
 
-            {/* Bottom Half: Date & Venue (2 Equal Columns) */}
-            <div className="unified-schedule-grid">
-              {/* Left Column: Date & Time */}
-              <div className="unified-schedule-item">
-                <div className="unified-schedule-icon-wrap" aria-hidden="true">
-                  <IosCalendarIcon size={34} />
-                </div>
-                <div className="unified-schedule-info">
-                  <h4 className="unified-schedule-day">Friday</h4>
-                  <p className="unified-schedule-date">16th October 2026</p>
-                  <p className="unified-schedule-time">11:00 AM Onwards</p>
-                </div>
+            {/* Bottom Half: Date & Time */}
+            <div className="unified-schedule-single">
+              <div className="unified-schedule-icon-wrap" aria-hidden="true">
+                <IosCalendarIcon size={36} />
               </div>
-
-              {/* Right Column: Venue Location */}
-              <div className="unified-schedule-item">
-                <div className="unified-schedule-icon-wrap" aria-hidden="true">
-                  <GoogleMapsOfficialIcon size={34} />
-                </div>
-                <div className="unified-schedule-info">
-                  <h4 className="unified-schedule-venue-name">QUALIFY IAS Office</h4>
-                  <p className="unified-schedule-address">First Floor, Bldg No. 1-1-726/1</p>
-                  <p className="unified-schedule-sub">Gandhi Nagar Rd, Ashok Nagar</p>
-                  <p className="unified-schedule-city">Hyderabad – 500080</p>
-                </div>
+              <div className="unified-schedule-info">
+                <h4 className="unified-schedule-day">Friday, 16th October 2026</h4>
+                <p className="unified-schedule-time">11:00 AM Onwards</p>
               </div>
             </div>
           </section>

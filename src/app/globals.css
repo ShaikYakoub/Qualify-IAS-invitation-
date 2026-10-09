@@ -240,6 +240,38 @@ div[data-next-badge] {
   margin: 16px 0 14px 0;
 }
 
+.unified-schedule-single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  padding: 2px 8px 4px 8px;
+  text-align: left;
+}
+
+.unified-schedule-single .unified-schedule-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.unified-schedule-single .unified-schedule-day {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 2px 0;
+  line-height: 1.25;
+}
+
+.unified-schedule-single .unified-schedule-time {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.50);
+  margin: 0;
+  line-height: 1.2;
+}
+
 .unified-schedule-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
