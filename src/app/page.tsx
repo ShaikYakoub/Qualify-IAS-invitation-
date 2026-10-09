@@ -7,6 +7,7 @@ import CountdownTimer from '@/components/CountdownTimer';
 import MapCard from '@/components/MapCard';
 import ActionToolbar from '@/components/ActionToolbar';
 import BottomDirectionBar from '@/components/BottomDirectionBar';
+import DesktopVenueQr from '@/components/DesktopVenueQr';
 import { IosCalendarIcon, GoogleMapsOfficialIcon } from '@/components/AppBrandIcons';
 import {
   GoldenScissorsRibbon,
@@ -23,6 +24,9 @@ const HYDERABAD_VENUE_MAPS_URL =
 export default function InvitationPage() {
   return (
     <div className="invite-wrapper qualify-theme">
+      {/* Desktop QR Code Floating Card for Mobile Venue Scanning */}
+      <DesktopVenueQr hyderabadUrl={HYDERABAD_VENUE_MAPS_URL} />
+
       {/* Decorative Golden Scissors & Ribbon cutting ceremony on top-left */}
       <GoldenScissorsRibbon className="scissors-corner-decor" />
 

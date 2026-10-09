@@ -191,7 +191,7 @@ export default function ActionToolbar() {
           className="action-btn calendar-action"
           title="Add to Google Calendar"
         >
-          <GoogleCalendarLogo size={18} />
+          <GoogleCalendarLogo size={20} />
           <span>Add to Calendar</span>
         </a>
 
@@ -204,12 +204,12 @@ export default function ActionToolbar() {
         >
           {copied ? (
             <>
-              <Check size={16} className="action-icon text-green" />
+              <Check size={18} className="action-icon text-green" />
               <span>Link Copied!</span>
             </>
           ) : (
             <>
-              <ImprovedShareIcon size={17} />
+              <ImprovedShareIcon size={19} />
               <span>Share Invite</span>
             </>
           )}
@@ -222,7 +222,7 @@ export default function ActionToolbar() {
           className="action-btn celebrate-action"
           title="Celebrate with festive party popper"
         >
-          <PartyPopperIcon size={18} />
+          <PartyPopperIcon size={20} />
           <span>Celebrate</span>
         </button>
       </div>
