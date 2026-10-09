@@ -1,0 +1,51 @@
+
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="gcalDropShadow" x="-15%" y="-10%" width="130%" height="135%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.14" />
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.08" />
+    </filter>
+    <clipPath id="gcalClip">
+      <rect x="20" y="20" width="216" height="216" rx="46" />
+    </clipPath>
+  </defs>
+
+  <g filter="url(#gcalDropShadow)">
+    <rect x="20" y="20" width="216" height="216" rx="46" fill="#FFFFFF" />
+
+    <g clip-path="url(#gcalClip)">
+      <!-- Top Blue Header -->
+      <path d="M 20,20 L 190,20 L 190,70 L 20,70 Z" fill="#4285F4" />
+
+      <!-- Top-Right Red Fold -->
+      <path d="M 190,20 L 236,70 L 190,70 Z" fill="#EA4335" />
+
+      <!-- Left Blue Accent Strip -->
+      <path d="M 20,70 L 60,70 L 60,196 L 20,196 Z" fill="#4285F4" />
+
+      <!-- Bottom Green Bar -->
+      <path d="M 20,196 L 190,196 L 190,236 L 20,236 Z" fill="#34A853" />
+
+      <!-- Bottom-Right Yellow Fold -->
+      <path d="M 190,196 L 236,196 L 190,236 Z" fill="#FBBC04" />
+
+      <!-- Right White Center Region -->
+      <rect x="60" y="70" width="176" height="126" fill="#FFFFFF" />
+
+      <!-- Date Numeral '16' in Bold Google Sans Blue -->
+      <text
+        x="148"
+        y="145"
+        fill="#1A73E8"
+        font-size="88"
+        font-weight="900"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        letter-spacing="-0.04em"
+      >16</text>
+    </g>
+
+    <rect x="20" y="20" width="216" height="216" rx="46" stroke="rgba(0,0,0,0.08)" stroke-width="1.5" />
+  </g>
+</svg>

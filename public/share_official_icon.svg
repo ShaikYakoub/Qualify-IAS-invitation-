@@ -1,0 +1,32 @@
+
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Vibrant blue to royal purple gradient matching original design -->
+    <linearGradient id="shareGradient" x1="40" y1="40" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="60%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="shareGlow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#6366F1" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shareGlow)">
+    <!-- Connecting Connector Branches -->
+    <line x1="88" y1="114" x2="168" y2="70" stroke="url(#shareGradient)" stroke-width="26" stroke-linecap="round" />
+    <line x1="88" y1="142" x2="168" y2="186" stroke="url(#shareGradient)" stroke-width="26" stroke-linecap="round" />
+
+    <!-- Top Right Node -->
+    <circle cx="180" cy="62" r="42" fill="url(#shareGradient)" />
+    <circle cx="180" cy="62" r="18" fill="#FFFFFF" />
+
+    <!-- Left Main Node -->
+    <circle cx="76" cy="128" r="46" fill="url(#shareGradient)" />
+    <circle cx="76" cy="128" r="20" fill="#FFFFFF" />
+
+    <!-- Bottom Right Node -->
+    <circle cx="180" cy="194" r="42" fill="url(#shareGradient)" />
+    <circle cx="180" cy="194" r="18" fill="#FFFFFF" />
+  </g>
+</svg>
