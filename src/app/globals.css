@@ -212,13 +212,12 @@ div[data-next-badge] {
 }
 
 .hero-description {
-  font-size: 13.5px;
-  line-height: 1.55;
-  color: #1a1a1a;
-  font-weight: 550;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.70);
+  font-weight: 400;
   margin: 0;
-  max-width: 350px;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+  max-width: 360px;
 }
 
 /* 2. Unified Event Card (Countdown + Divider + 2-Column Date & Venue) */
