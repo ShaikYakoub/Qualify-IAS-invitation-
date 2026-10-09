@@ -25,16 +25,13 @@ export default function InvitationPage() {
         {/* 1. Hero Section with Office Glass Doors & Red Ribbon Bow Blend */}
         <section className="hero-split-banner">
           <div className="hero-content-col">
-            {/* Brand Logo Header */}
+            {/* Brand Logo Header at Top Left */}
             <div className="hero-logo-wrap">
               <QualifyIasLogo />
             </div>
 
             {/* Red Accent Dash */}
             <div className="hero-red-dash" aria-hidden="true" />
-
-            {/* Eyebrow Label */}
-            <p className="hero-eyebrow">YOU ARE CORDIALLY INVITED</p>
 
             {/* Main Headline */}
             <h1 className="hero-main-title">
@@ -47,9 +44,8 @@ export default function InvitationPage() {
 
             {/* Invitation Description Copy */}
             <p className="hero-description">
-              We are delighted to invite you to the inauguration of our First Offline Centre,
-              a space dedicated to providing Civil Services aspirants with foundational coaching,
-              quality materials, expert guidance, mentorship and the right direction.
+              We are delighted to invite you to the inauguration of our new office. Your gracious
+              presence will make this occasion truly special.
             </p>
           </div>
         </section>

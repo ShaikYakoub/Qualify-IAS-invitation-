@@ -120,7 +120,7 @@ div[data-next-badge] {
 .hero-split-banner {
   position: relative;
   width: 100%;
-  min-height: 440px;
+  min-height: 420px;
   background-color: #ffffff;
   background-image:
     linear-gradient(
@@ -135,16 +135,16 @@ div[data-next-badge] {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
-  padding: 28px 18px 24px 18px;
+  padding: 22px 18px 20px 18px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 @media (min-width: 768px) {
   .hero-split-banner {
-    min-height: 500px;
-    padding: 40px calc((100vw - 480px) / 2 + 16px) 32px calc((100vw - 480px) / 2 + 16px);
+    min-height: 460px;
+    padding: 30px calc((100vw - 480px) / 2 + 16px) 24px calc((100vw - 480px) / 2 + 16px);
     background-position: 70% center;
   }
 }
@@ -153,16 +153,20 @@ div[data-next-badge] {
   max-width: 380px;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .hero-logo-wrap {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   display: inline-block;
 }
 
 .qualify-official-logo-img {
   width: auto;
-  max-width: 220px;
+  max-width: 190px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -174,16 +178,7 @@ div[data-next-badge] {
   height: 3px;
   background: #991b1b;
   border-radius: 2px;
-  margin: 14px 0 10px 0;
-}
-
-.hero-eyebrow {
-  font-size: 11px;
-  font-weight: 750;
-  letter-spacing: 0.12em;
-  color: #4b5563;
-  text-transform: uppercase;
-  margin: 0 0 4px 0;
+  margin: 10px 0 10px 0;
 }
 
 .hero-main-title {
@@ -191,8 +186,8 @@ div[data-next-badge] {
   font-size: 38px;
   font-weight: 900;
   color: #111827;
-  line-height: 1.12;
-  margin: 4px 0 10px 0;
+  line-height: 1.1;
+  margin: 2px 0 10px 0;
   letter-spacing: -0.01em;
 }
 
