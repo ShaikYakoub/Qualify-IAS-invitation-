@@ -32,8 +32,8 @@ export default function InvitationPage() {
 
             {/* Main Headline */}
             <h1 className="hero-main-title">
-              Office<br />
-              Inauguration
+              OFFICE<br />
+              INAUGURATION
             </h1>
 
             {/* Red Accent Dash */}

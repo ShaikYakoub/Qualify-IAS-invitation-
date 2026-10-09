@@ -202,12 +202,13 @@ div[data-next-badge] {
 
 .hero-main-title {
   font-family: var(--font-serif);
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 900;
   color: #000000;
+  text-transform: uppercase;
   line-height: 1.1;
-  margin: 0 0 4px 0;
-  letter-spacing: -0.01em;
+  margin: 0 0 6px 0;
+  letter-spacing: 0.01em;
 }
 
 .hero-description {
@@ -246,8 +247,15 @@ div[data-next-badge] {
   justify-content: center;
   gap: 14px;
   width: 100%;
-  padding: 2px 8px 4px 8px;
+  padding: 10px 16px;
+  background: #f9fafb;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
   text-align: left;
+}
+
+.unified-schedule-single .unified-schedule-icon-wrap {
+  flex-shrink: 0;
 }
 
 .unified-schedule-single .unified-schedule-info {
@@ -257,7 +265,7 @@ div[data-next-badge] {
 
 .unified-schedule-single .unified-schedule-day {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 15.5px;
   font-weight: 800;
   color: #000000;
   margin: 0 0 2px 0;
@@ -624,26 +632,15 @@ div[data-next-badge] {
 }
 
 .countdown-eyebrow {
-  font-size: 17px;
-  font-weight: 850;
-  letter-spacing: 0.1em;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.28em;
   color: var(--plain-red);
   margin-bottom: 12px;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.countdown-eyebrow::before,
-.countdown-eyebrow::after {
-  content: '';
-  display: inline-block;
-  width: 18px;
-  height: 2px;
-  background-color: var(--plain-red);
-  opacity: 0.9;
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 .countdown-grid {
