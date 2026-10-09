@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 
@@ -14,9 +14,45 @@ const jakarta = Plus_Jakarta_Sans({
   display: 'swap',
 });
 
+export const viewport: Viewport = {
+  themeColor: '#ffffff',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
-  title: 'QUALIFY IAS - Inauguration of Our Offline Centre',
-  description: 'You are cordially invited to the inauguration of QUALIFY IAS Offline Centre in Ashok Nagar, Hyderabad.',
+  metadataBase: new URL('https://qualifyias.com'),
+  title: 'QUALIFY IAS - Office Inauguration Invitation',
+  description:
+    'You are cordially invited to the inauguration of our new office on Friday, 16th October 2026 at Ashok Nagar, Hyderabad. Chief Guest: Jeenu Jaswanth Chandra (AIR 23, UPSC CSE 2025). Founder: Ramareddipeta Rajinikanth.',
+  openGraph: {
+    title: 'QUALIFY IAS - Office Inauguration Invitation',
+    description:
+      'You are cordially invited to the inauguration of our new office on Friday, 16th October 2026 at Ashok Nagar, Hyderabad.',
+    type: 'website',
+    locale: 'en_IN',
+    siteName: 'QUALIFY IAS',
+    images: [
+      {
+        url: '/qualify_ias_logo.png',
+        width: 650,
+        height: 319,
+        alt: 'QUALIFY IAS Official Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'QUALIFY IAS - Office Inauguration Invitation',
+    description:
+      'You are cordially invited to the inauguration of our new office on Friday, 16th October 2026 at Ashok Nagar, Hyderabad.',
+    images: ['/qualify_ias_logo.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +62,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${jakarta.variable}`}>
+      <head>
+        {/* Preload LCP critical hero image and logo for instant rendering */}
+        <link rel="preload" href="/hero_office.jpg" as="image" type="image/jpeg" fetchPriority="high" />
+        <link rel="preload" href="/qualify_ias_logo.png" as="image" type="image/png" fetchPriority="high" />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );

@@ -47,3 +47,7 @@ next-env.d.ts
 # test screenshots
 public/*.png
 !public/qualify_ias_logo.png
+!public/calendar_original_icon.png
+!public/gcal_official_icon.png
+!public/share_official_icon.png
+!public/celebrate_official_icon.png
