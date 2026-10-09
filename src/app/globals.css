@@ -244,14 +244,36 @@ div[data-next-badge] {
 .unified-schedule-single {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
+  justify-content: space-between;
+  gap: 10px;
   width: 100%;
-  padding: 10px 16px;
+  padding: 10px 14px;
   background: #f9fafb;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
+  border: 1.2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.clickable-schedule-link:hover {
+  background: #f3f4f6;
+  border-color: rgba(0, 0, 0, 0.20);
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 16px -2px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.clickable-schedule-link:active {
+  transform: translateY(0);
+}
+
+.unified-schedule-left {
+  display: flex;
+  align-items: center;
+  gap: 11px;
   text-align: left;
+  min-width: 0;
 }
 
 .unified-schedule-single .unified-schedule-icon-wrap {
@@ -261,23 +283,56 @@ div[data-next-badge] {
 .unified-schedule-single .unified-schedule-info {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .unified-schedule-single .unified-schedule-day {
   font-family: var(--font-serif);
-  font-size: 15.5px;
+  font-size: 14.5px;
   font-weight: 800;
   color: #000000;
   margin: 0 0 2px 0;
   line-height: 1.25;
+  white-space: nowrap;
 }
 
 .unified-schedule-single .unified-schedule-time {
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.50);
   margin: 0;
   line-height: 1.2;
+  white-space: nowrap;
+}
+
+.unified-schedule-right-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 11px;
+  background: #ffffff;
+  border: 1.2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #000000;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.clickable-schedule-link:hover .unified-schedule-right-btn {
+  border-color: rgba(0, 0, 0, 0.32);
+  background: #ffffff;
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.08);
+}
+
+.schedule-gcal-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  display: block;
 }
 
 .unified-schedule-grid {
@@ -709,23 +764,23 @@ div[data-next-badge] {
 
 .action-toolbar {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  gap: 6px;
+  gap: 8px;
 }
 
 .action-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  min-height: 46px;
-  padding: 8px 4px;
+  gap: 8px;
+  min-height: 48px;
+  padding: 10px 12px;
   border-radius: 12px; /* Not pill-shaped, but slightly rounded at the end */
   background: #ffffff;
   border: 1.5px solid rgba(0, 0, 0, 0.16);
   box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02);
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 700;
   color: #000000;
   letter-spacing: -0.01em;

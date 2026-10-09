@@ -14,6 +14,9 @@ import { IosCalendarIcon } from '@/components/AppBrandIcons';
 const HYDERABAD_VENUE_MAPS_URL =
   'https://www.google.com/maps/dir/?api=1&destination=Building+No.+1-1-726%2F1%2C+Gandhi+Nagar+Road%2C+Ashok+Nagar%2C+Hyderabad%2C+Telangana+500080';
 
+const GOOGLE_CALENDAR_URL =
+  'https://calendar.google.com/calendar/render?action=TEMPLATE&text=QUALIFY+IAS+Offline+Centre+Inauguration&dates=20261016T053000Z/20261016T093000Z&details=Inauguration+of+the+First+Offline+Centre+of+QUALIFY+IAS.+Chief+Guest:+Jeenu+Jaswanth+Chandra+(AIR+23,+UPSC+CSE+2025).+Founder:+Ramareddipeta+Rajinikanth.&location=QUALIFY+IAS,+Building+No.+1-1-726/1,+Gandhi+Nagar+Road,+Ashok+Nagar,+Hyderabad+-+500080';
+
 export default function InvitationPage() {
   return (
     <div className="invite-wrapper qualify-theme">
@@ -57,16 +60,36 @@ export default function InvitationPage() {
             {/* Subtle Divider Line */}
             <div className="unified-card-divider" aria-hidden="true" />
 
-            {/* Bottom Half: Date & Time */}
-            <div className="unified-schedule-single">
-              <div className="unified-schedule-icon-wrap" aria-hidden="true">
-                <IosCalendarIcon size={36} />
+            {/* Bottom Half: Date & Time (Clickable Container to Add to Google Calendar) */}
+            <a
+              href={GOOGLE_CALENDAR_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="unified-schedule-single clickable-schedule-link"
+              title="Add to Google Calendar"
+            >
+              <div className="unified-schedule-left">
+                <div className="unified-schedule-icon-wrap" aria-hidden="true">
+                  <IosCalendarIcon size={38} />
+                </div>
+                <div className="unified-schedule-info">
+                  <h4 className="unified-schedule-day">Friday, 16th October 2026</h4>
+                  <p className="unified-schedule-time">11:00 AM Onwards</p>
+                </div>
               </div>
-              <div className="unified-schedule-info">
-                <h4 className="unified-schedule-day">Friday, 16th October 2026</h4>
-                <p className="unified-schedule-time">11:00 AM Onwards</p>
+
+              {/* Right Side Action Button inside Clickable Card */}
+              <div className="unified-schedule-right-btn" aria-hidden="true">
+                <img
+                  src="/gcal_official_icon.png"
+                  alt=""
+                  width={16}
+                  height={16}
+                  className="schedule-gcal-icon"
+                />
+                <span>Add to Calendar</span>
               </div>
-            </div>
+            </a>
           </section>
 
           {/* 3. Action Toolbar (Add to Calendar, Share Invite, Celebrate) */}

@@ -96,24 +96,10 @@ export default function ActionToolbar() {
     });
   };
 
-  const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=QUALIFY+IAS+Offline+Centre+Inauguration&dates=20261016T053000Z/20261016T093000Z&details=Inauguration+of+the+First+Offline+Centre+of+QUALIFY+IAS.+Chief+Guest:+Jeenu+Jaswanth+Chandra+(AIR+23,+UPSC+CSE+2025).+Founder:+Ramareddipeta+Rajinikanth.&location=QUALIFY+IAS,+Building+No.+1-1-726/1,+Gandhi+Nagar+Road,+Ashok+Nagar,+Hyderabad+-+500080`;
-
   return (
     <div className="action-toolbar-wrap">
       <div className="action-toolbar">
-        {/* 1. Add to Google Calendar with latest Google Calendar Logo */}
-        <a
-          href={googleCalendarUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="action-btn calendar-action"
-          title="Add to Google Calendar"
-        >
-          <GoogleCalendarLogo size={20} />
-          <span>Add to Calendar</span>
-        </a>
-
-        {/* 2. Improved Share Button */}
+        {/* 1. Improved Share Button */}
         <button
           type="button"
           onClick={handleShare}
@@ -133,7 +119,7 @@ export default function ActionToolbar() {
           )}
         </button>
 
-        {/* 3. Celebrate Button with Party Popper Icon */}
+        {/* 2. Celebrate Button with Party Popper Icon */}
         <button
           type="button"
           onClick={handleConfetti}
