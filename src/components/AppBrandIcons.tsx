@@ -2,82 +2,33 @@
 
 import React from 'react';
 
-// 1. Official Apple iOS Calendar App Icon
-export function IosCalendarIcon({ size = 36, className = '' }: { size?: number; className?: string }) {
+// 1. Authentic Original Calendar Icon (Red Header with FRI & 16 Date Numeral)
+export function IosCalendarIcon({ size = 38, className = '' }: { size?: number; className?: string }) {
   return (
     <div
       className={`ios-calendar-icon-wrap ${className}`}
-      style={{ width: size, height: size }}
+      style={{
+        width: size,
+        height: size,
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexShrink: 0,
+      }}
       aria-hidden="true"
     >
-      <svg
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="ios-calendar-svg"
-      >
-        <defs>
-          <filter id="iosCalDropShadow" x="-15%" y="-10%" width="130%" height="135%">
-            <feDropShadow dx="0" dy="2.5" stdDeviation="2.5" floodColor="#000000" floodOpacity="0.28" />
-          </filter>
-          <clipPath id="iosCalSquircleClip">
-            <rect x="1" y="1" width="46" height="46" rx="10.5" />
-          </clipPath>
-          <linearGradient id="iosRedBarGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#FF3B30" />
-            <stop offset="100%" stopColor="#E0241A" />
-          </linearGradient>
-        </defs>
-
-        {/* Squircle Card with Drop Shadow */}
-        <g filter="url(#iosCalDropShadow)">
-          <rect
-            x="1"
-            y="1"
-            width="46"
-            height="46"
-            rx="10.5"
-            fill="#FFFFFF"
-            stroke="#E5E5EA"
-            strokeWidth="1.2"
-          />
-
-          <g clipPath="url(#iosCalSquircleClip)">
-            {/* Apple Red Top Header Bar */}
-            <rect x="1" y="1" width="46" height="15" fill="url(#iosRedBarGradient)" />
-
-            {/* Day of Week Text in Top Header: 'FRI' (Friday) */}
-            <text
-              x="24"
-              y="11.5"
-              fill="#FFFFFF"
-              fontSize="8"
-              fontWeight="800"
-              letterSpacing="0.08em"
-              textAnchor="middle"
-              dominantBaseline="middle"
-              fontFamily="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif"
-            >
-              FRI
-            </text>
-
-            {/* Apple SF Pro Display Bold Date Numeral: '16' */}
-            <text
-              x="24"
-              y="32.5"
-              fill="#1C1C1E"
-              fontSize="22"
-              fontWeight="700"
-              letterSpacing="-0.03em"
-              textAnchor="middle"
-              dominantBaseline="middle"
-              fontFamily="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif"
-            >
-              16
-            </text>
-          </g>
-        </g>
-      </svg>
+      <img
+        src="/calendar_original_icon.png"
+        alt="Friday, 16th October 2026"
+        width={size}
+        height={size}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          display: 'block',
+        }}
+      />
     </div>
   );
 }
