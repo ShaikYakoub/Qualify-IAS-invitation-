@@ -145,9 +145,9 @@ div[data-next-badge] {
     linear-gradient(
       90deg,
       #ffffff 0%,
-      rgba(255, 255, 255, 0.98) 45%,
-      rgba(255, 255, 255, 0.72) 65%,
-      rgba(255, 255, 255, 0.15) 85%,
+      #ffffff 58%,
+      rgba(255, 255, 255, 0.96) 76%,
+      rgba(255, 255, 255, 0.45) 92%,
       transparent 100%
     ),
     url('/hero_office.jpg');
@@ -212,12 +212,13 @@ div[data-next-badge] {
 }
 
 .hero-description {
-  font-size: 13px;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.70);
-  font-weight: 450;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #1a1a1a;
+  font-weight: 550;
   margin: 0;
-  max-width: 360px;
+  max-width: 350px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
 }
 
 /* 2. Unified Event Card (Countdown + Divider + 2-Column Date & Venue) */
@@ -748,12 +749,13 @@ div[data-next-badge] {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-/* White Celebrate Action Button with Red Border & Text */
+/* White Celebrate Action Button with Red Border & Text (No Shadows) */
 .celebrate-action {
   background: #ffffff;
   color: var(--plain-red);
   border: 1.5px solid var(--plain-red);
-  box-shadow: 0 4px 12px -2px rgba(225, 29, 36, 0.12), 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-shadow: none;
+  font-weight: 750;
 }
 
 .celebrate-action:hover {
@@ -761,7 +763,12 @@ div[data-next-badge] {
   border-color: #C81E1E;
   color: #C81E1E;
   transform: translateY(-2px);
-  box-shadow: 0 8px 18px -2px rgba(225, 29, 36, 0.18), 0 2px 6px rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+}
+
+.celebrate-action:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 /* Desktop Venue QR Code Floating Companion Card */
