@@ -9,6 +9,7 @@ import ActionToolbar from '@/components/ActionToolbar';
 import BottomDirectionBar from '@/components/BottomDirectionBar';
 import DesktopVenueQr from '@/components/DesktopVenueQr';
 import { IosCalendarIcon } from '@/components/AppBrandIcons';
+import { Plus } from 'lucide-react';
 
 // Exact Venue Navigation in Ashok Nagar, Hyderabad
 const HYDERABAD_VENUE_MAPS_URL =
@@ -70,7 +71,7 @@ export default function InvitationPage() {
             >
               <div className="unified-schedule-left">
                 <div className="unified-schedule-icon-wrap" aria-hidden="true">
-                  <IosCalendarIcon size={38} />
+                  <IosCalendarIcon size={50} />
                 </div>
                 <div className="unified-schedule-info">
                   <h4 className="unified-schedule-day">Friday, 16th October 2026</h4>
@@ -78,16 +79,9 @@ export default function InvitationPage() {
                 </div>
               </div>
 
-              {/* Right Side Action Button inside Clickable Card */}
-              <div className="unified-schedule-right-btn" aria-hidden="true">
-                <img
-                  src="/gcal_official_icon.png"
-                  alt=""
-                  width={16}
-                  height={16}
-                  className="schedule-gcal-icon"
-                />
-                <span>Add to Calendar</span>
+              {/* Right Side Plus Action Icon */}
+              <div className="unified-schedule-plus-btn" aria-hidden="true" title="Add to Calendar">
+                <Plus size={18} strokeWidth={2.5} />
               </div>
             </a>
           </section>

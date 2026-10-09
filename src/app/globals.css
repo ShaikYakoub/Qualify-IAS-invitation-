@@ -247,7 +247,7 @@ div[data-next-badge] {
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  padding: 10px 14px;
+  padding: 5px 12px 5px 5px;
   background: #f9fafb;
   border: 1.2px solid rgba(0, 0, 0, 0.08);
   border-radius: 14px;
@@ -255,6 +255,7 @@ div[data-next-badge] {
   cursor: pointer;
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  min-height: 60px;
 }
 
 .clickable-schedule-link:hover {
@@ -271,13 +272,17 @@ div[data-next-badge] {
 .unified-schedule-left {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 12px;
   text-align: left;
   min-width: 0;
 }
 
 .unified-schedule-single .unified-schedule-icon-wrap {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
 }
 
 .unified-schedule-single .unified-schedule-info {
@@ -305,34 +310,27 @@ div[data-next-badge] {
   white-space: nowrap;
 }
 
-.unified-schedule-right-btn {
-  display: inline-flex;
+.unified-schedule-plus-btn {
+  display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 11px;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   background: #ffffff;
-  border: 1.2px solid rgba(0, 0, 0, 0.12);
-  border-radius: 10px;
-  font-size: 11.5px;
-  font-weight: 700;
+  border: 1.5px solid rgba(0, 0, 0, 0.14);
   color: #000000;
-  white-space: nowrap;
+  box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.06);
   flex-shrink: 0;
-  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.04);
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.clickable-schedule-link:hover .unified-schedule-right-btn {
-  border-color: rgba(0, 0, 0, 0.32);
-  background: #ffffff;
-  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.08);
-}
-
-.schedule-gcal-icon {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
-  display: block;
+.clickable-schedule-link:hover .unified-schedule-plus-btn {
+  background: var(--plain-red);
+  border-color: var(--plain-red);
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(225, 29, 36, 0.25);
 }
 
 .unified-schedule-grid {
