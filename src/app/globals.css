@@ -120,7 +120,7 @@ div[data-next-badge] {
 .hero-split-banner {
   position: relative;
   width: 100%;
-  min-height: 420px;
+  min-height: 285px;
   background-color: #ffffff;
   background-image:
     linear-gradient(
@@ -135,7 +135,7 @@ div[data-next-badge] {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
-  padding: 22px 18px 20px 18px;
+  padding: 16px 18px 12px 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -143,8 +143,8 @@ div[data-next-badge] {
 
 @media (min-width: 768px) {
   .hero-split-banner {
-    min-height: 460px;
-    padding: 30px calc((100vw - 480px) / 2 + 16px) 24px calc((100vw - 480px) / 2 + 16px);
+    min-height: 360px;
+    padding: 24px calc((100vw - 480px) / 2 + 16px) 20px calc((100vw - 480px) / 2 + 16px);
     background-position: 70% center;
   }
 }
@@ -160,13 +160,13 @@ div[data-next-badge] {
 }
 
 .hero-logo-wrap {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   display: inline-block;
 }
 
 .qualify-official-logo-img {
   width: auto;
-  max-width: 190px;
+  max-width: 180px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -178,22 +178,22 @@ div[data-next-badge] {
   height: 3px;
   background: #991b1b;
   border-radius: 2px;
-  margin: 10px 0 10px 0;
+  margin: 8px 0 10px 0;
 }
 
 .hero-main-title {
   font-family: var(--font-serif);
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 900;
   color: #111827;
   line-height: 1.1;
-  margin: 2px 0 10px 0;
+  margin: 0 0 4px 0;
   letter-spacing: -0.01em;
 }
 
 .hero-description {
   font-size: 13px;
-  line-height: 1.55;
+  line-height: 1.5;
   color: #374151;
   font-weight: 450;
   margin: 0;
@@ -210,8 +210,8 @@ div[data-next-badge] {
   box-shadow:
     0 12px 32px -4px rgba(0, 0, 0, 0.08),
     0 2px 6px rgba(0, 0, 0, 0.02);
-  padding: 18px 16px;
-  margin: 18px 0 14px 0;
+  padding: 16px 14px;
+  margin: -8px 0 14px 0;
 }
 
 .unified-card-divider {

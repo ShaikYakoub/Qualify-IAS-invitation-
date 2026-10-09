@@ -30,9 +30,6 @@ export default function InvitationPage() {
               <QualifyIasLogo />
             </div>
 
-            {/* Red Accent Dash */}
-            <div className="hero-red-dash" aria-hidden="true" />
-
             {/* Main Headline */}
             <h1 className="hero-main-title">
               Offline Centre<br />
