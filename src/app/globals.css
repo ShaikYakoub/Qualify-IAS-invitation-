@@ -101,6 +101,7 @@ div[data-next-badge] {
 }
 
 /* Main Card Container - Full Width */
+.invite-card.layout-modern-reference,
 .invite-card.qualify-card {
   position: relative;
   width: 100%;
@@ -109,10 +110,332 @@ div[data-next-badge] {
   background-color: #ffffff;
   box-shadow: none;
   border-radius: 0;
-  padding: 20px 0 100px 0;
+  padding: 0 0 100px 0;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+}
+
+/* 1. Hero Split Banner with Office Glass Door & Ribbon Blend */
+.hero-split-banner {
+  position: relative;
+  width: 100%;
+  min-height: 440px;
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.98) 45%,
+      rgba(255, 255, 255, 0.72) 65%,
+      rgba(255, 255, 255, 0.15) 85%,
+      transparent 100%
+    ),
+    url('/hero_office.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  padding: 28px 18px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hero-split-banner {
+    min-height: 500px;
+    padding: 40px calc((100vw - 480px) / 2 + 16px) 32px calc((100vw - 480px) / 2 + 16px);
+    background-position: 70% center;
+  }
+}
+
+.hero-content-col {
+  max-width: 380px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo-wrap {
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.hero-logo-wrap .qualify-logo-container {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-logo-wrap .qualify-emblem-wrap {
+  width: 130px;
+  height: 76px;
+  margin-left: -6px;
+  margin-bottom: -6px;
+}
+
+.hero-logo-wrap .qualify-brand-heading {
+  justify-content: flex-start;
+}
+
+.hero-logo-wrap .brand-qualify {
+  font-size: 26px;
+}
+
+.hero-logo-wrap .brand-ias {
+  font-size: 26px;
+  margin-left: 6px;
+}
+
+.hero-logo-wrap .qualify-brand-tagline {
+  font-size: 8px;
+  text-align: left;
+}
+
+.hero-red-dash {
+  width: 32px;
+  height: 3px;
+  background: #991b1b;
+  border-radius: 2px;
+  margin: 14px 0 10px 0;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  color: #4b5563;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+
+.hero-main-title {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  font-weight: 900;
+  color: #111827;
+  line-height: 1.12;
+  margin: 4px 0 10px 0;
+  letter-spacing: -0.01em;
+}
+
+.hero-description {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #374151;
+  font-weight: 450;
+  margin: 0;
+  max-width: 360px;
+}
+
+/* 2. Unified Event Card (Countdown + Divider + 2-Column Date & Venue) */
+.unified-event-card {
+  position: relative;
+  z-index: 5;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1.5px solid rgba(202, 138, 4, 0.35);
+  box-shadow:
+    0 12px 32px -4px rgba(0, 0, 0, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.02);
+  padding: 18px 16px;
+  margin: 18px 0 14px 0;
+}
+
+.unified-card-divider {
+  width: 100%;
+  height: 1px;
+  background: #f1f2f4;
+  margin: 16px 0 14px 0;
+}
+
+.unified-schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.unified-schedule-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.unified-schedule-icon-wrap {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.unified-schedule-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.unified-schedule-day {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 2px 0;
+  line-height: 1.2;
+}
+
+.unified-schedule-date {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 2px 0;
+  line-height: 1.25;
+}
+
+.unified-schedule-time {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.unified-schedule-venue-name {
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 2px 0;
+  line-height: 1.2;
+}
+
+.unified-schedule-address {
+  font-size: 11px;
+  font-weight: 600;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.unified-schedule-sub {
+  font-size: 10.5px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.unified-schedule-city {
+  font-size: 11px;
+  font-weight: 700;
+  color: #111827;
+  margin: 1px 0 0 0;
+  line-height: 1.3;
+}
+
+/* 4. People Section (Chief Guest & Founder Side-by-Side) */
+.people-section-wrap {
+  margin: 24px 0 20px 0;
+}
+
+.people-grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  text-align: center;
+}
+
+.person-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-badge {
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  color: #991b1b;
+  text-transform: uppercase;
+}
+
+.person-red-dash {
+  width: 28px;
+  height: 2px;
+  background: #991b1b;
+  border-radius: 1px;
+  margin: 4px 0 12px 0;
+}
+
+.person-avatar-wrap {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3.5px solid #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+  background: #f3f4f6;
+  position: relative;
+}
+
+.person-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.person-name {
+  font-family: var(--font-serif);
+  font-size: 15.5px;
+  font-weight: 850;
+  color: #111827;
+  margin: 0 0 3px 0;
+  line-height: 1.25;
+}
+
+.person-rank {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #374151;
+  margin: 0 0 2px 0;
+  line-height: 1.3;
+}
+
+.person-sub {
+  font-size: 10px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* 5. Map Section Card */
+.map-card-wrapper-box {
+  margin: 20px 0 16px 0;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1.5px solid #e5e7eb;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+}
+
+/* 6. Closing Section */
+.closing-section {
+  text-align: center;
+  margin: 20px 0 24px 0;
+}
+
+.closing-red-dash {
+  width: 36px;
+  height: 2px;
+  background: #991b1b;
+  border-radius: 1px;
+  margin: 0 auto 12px auto;
+}
+
+.closing-blessing {
+  font-family: var(--font-serif);
+  font-size: 13.5px;
+  font-style: italic;
+  color: #374151;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 360px;
 }
 
 /* Centered Content Wrap for Optimal Reading on Desktop & Mobile */
