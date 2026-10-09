@@ -160,34 +160,13 @@ div[data-next-badge] {
   display: inline-block;
 }
 
-.hero-logo-wrap .qualify-logo-container {
-  align-items: flex-start;
-  text-align: left;
-}
-
-.hero-logo-wrap .qualify-emblem-wrap {
-  width: 130px;
-  height: 76px;
-  margin-left: -6px;
-  margin-bottom: -6px;
-}
-
-.hero-logo-wrap .qualify-brand-heading {
-  justify-content: flex-start;
-}
-
-.hero-logo-wrap .brand-qualify {
-  font-size: 26px;
-}
-
-.hero-logo-wrap .brand-ias {
-  font-size: 26px;
-  margin-left: 6px;
-}
-
-.hero-logo-wrap .qualify-brand-tagline {
-  font-size: 8px;
-  text-align: left;
+.qualify-official-logo-img {
+  width: auto;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.06));
 }
 
 .hero-red-dash {
