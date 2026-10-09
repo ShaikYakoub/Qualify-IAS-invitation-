@@ -447,24 +447,40 @@ div[data-next-badge] {
   background: #ffffff;
 }
 
-/* 6. Closing Section */
+/* 6. Venue Address Section below Map */
 .closing-section {
   text-align: center;
-  margin: 20px 0 24px 0;
+  margin: 18px 0 24px 0;
 }
 
 .closing-red-dash {
   width: 36px;
-  height: 2px;
+  height: 2.5px;
   background: var(--plain-red);
   border-radius: 1px;
   margin: 0 auto 12px auto;
 }
 
-.closing-blessing {
+.venue-address-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  text-align: center;
+}
+
+.venue-address-title {
   font-family: var(--font-serif);
-  font-size: 13.5px;
-  font-style: italic;
+  font-size: 16px;
+  font-weight: 850;
+  color: #000000;
+  margin: 0 0 2px 0;
+  line-height: 1.25;
+}
+
+.venue-address-text {
+  font-size: 13px;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.70);
   line-height: 1.5;
   margin: 0 auto;

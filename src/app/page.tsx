@@ -124,12 +124,16 @@ export default function InvitationPage() {
             <MapCard hyderabadUrl={HYDERABAD_VENUE_MAPS_URL} />
           </section>
 
-          {/* 6. Closing Blessing & Red Dash */}
-          <section className="closing-section" aria-label="Closing Blessing">
+          {/* 6. Venue Address Section */}
+          <section className="closing-section" aria-label="Venue Address">
             <div className="closing-red-dash" aria-hidden="true" />
-            <p className="closing-blessing">
-              We look forward to your esteemed presence and blessings.
-            </p>
+            <div className="venue-address-block">
+              <h4 className="venue-address-title">QUALIFY IAS Office</h4>
+              <p className="venue-address-text">
+                1st Floor, Bldg No. 1-1-726/1, Gandhi Nagar Rd,<br />
+                Ashok Nagar, Hyderabad – 500080
+              </p>
+            </div>
           </section>
         </div>
       </main>

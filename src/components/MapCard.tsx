@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Compass, Plus, Minus, Navigation, Star } from 'lucide-react';
-import { GoogleMapsPinTeardrop } from './AppBrandIcons';
+import { Compass, Plus, Minus } from 'lucide-react';
 
 interface MapCardProps {
   hyderabadUrl: string;
@@ -205,34 +204,6 @@ export default function MapCard({ hyderabadUrl }: MapCardProps) {
                 <circle cx="0" cy="-15" r="2.5" fill="#b31412" />
               </g>
             </svg>
-          </div>
-
-          {/* Clean White Google Maps Info Card (Static, Right of Pin) */}
-          <div className="google-place-card">
-            <div className="gcard-header">
-              <span className="gcard-title">QUALIFY IAS</span>
-              <span className="gcard-badge">Offline Centre</span>
-            </div>
-            <div className="gcard-rating">
-              <span className="gcard-stars">4.9</span>
-              <div className="gcard-stars-icons" aria-hidden="true">
-                <Star size={10} fill="#fbbc04" stroke="#fbbc04" />
-                <Star size={10} fill="#fbbc04" stroke="#fbbc04" />
-                <Star size={10} fill="#fbbc04" stroke="#fbbc04" />
-                <Star size={10} fill="#fbbc04" stroke="#fbbc04" />
-                <Star size={10} fill="#fbbc04" stroke="#fbbc04" />
-              </div>
-              <span className="gcard-category">• Civil services institute</span>
-            </div>
-            <p className="gcard-address">
-              1st Floor, Bldg 1-1-726/1, Gandhi Nagar Rd, Ashok Nagar, Hyderabad - 500080
-            </p>
-            <div className="gcard-footer">
-              <span className="gcard-directions-link">
-                <GoogleMapsPinTeardrop size={12} className="inline-block mr-1 align-middle" />
-                View on Google Maps
-              </span>
-            </div>
           </div>
 
           {/* Google Maps Clean Controls (Top Right: Recenter, Zoom +/-) */}
