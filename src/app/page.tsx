@@ -96,10 +96,10 @@ export default function InvitationPage() {
               <div className="person-col">
                 <div className="person-ribbon-wrap">
                   <Image
-                    src="/chief_guest_ribbon.png?v=2"
+                    src="/chief_guest_ribbon.png?v=3"
                     alt="Chief Guest"
-                    width={136}
-                    height={30}
+                    width={140}
+                    height={23}
                     className="person-ribbon-img"
                     priority
                   />
@@ -125,10 +125,10 @@ export default function InvitationPage() {
               <div className="person-col">
                 <div className="person-ribbon-wrap">
                   <Image
-                    src="/founder_ribbon.png?v=2"
+                    src="/founder_ribbon.png?v=3"
                     alt="Founder"
-                    width={136}
-                    height={30}
+                    width={140}
+                    height={23}
                     className="person-ribbon-img"
                     priority
                   />

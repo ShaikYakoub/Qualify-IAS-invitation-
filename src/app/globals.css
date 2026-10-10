@@ -438,13 +438,13 @@ div[data-next-badge] {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  height: 28px;
+  height: 32px;
 }
 
 .person-ribbon-img {
   width: auto;
-  height: 24px;
-  max-width: 148px;
+  height: 28px;
+  max-width: 154px;
   object-fit: contain;
   display: block;
 }
