@@ -12,8 +12,7 @@ import { IosCalendarIcon } from '@/components/AppBrandIcons';
 import { Plus } from 'lucide-react';
 
 // Exact Venue Navigation in Ashok Nagar, Hyderabad
-const HYDERABAD_VENUE_MAPS_URL =
-  'https://www.google.com/maps/dir/?api=1&destination=Building+No.+1-1-726%2F1%2C+Gandhi+Nagar+Road%2C+Ashok+Nagar%2C+Hyderabad%2C+Telangana+500080';
+const HYDERABAD_VENUE_MAPS_URL = 'https://maps.app.goo.gl/AfyE5D9MTXi42DQW6';
 
 const GOOGLE_CALENDAR_URL =
   'https://calendar.google.com/calendar/render?action=TEMPLATE&text=QUALIFY+IAS+Offline+Centre+Inauguration&dates=20261016T053000Z/20261016T093000Z&details=Inauguration+of+the+First+Offline+Centre+of+QUALIFY+IAS.+Chief+Guest:+Jeenu+Jaswanth+Chandra+(AIR+23,+UPSC+CSE+2025).+Founder:+Ramareddipeta+Rajinikanth.&location=QUALIFY+IAS,+Building+No.+1-1-726/1,+Gandhi+Nagar+Road,+Ashok+Nagar,+Hyderabad+-+500080';
