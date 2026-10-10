@@ -94,8 +94,16 @@ export default function InvitationPage() {
             <div className="people-grid-row">
               {/* Column 1: Chief Guest */}
               <div className="person-col">
-                <span className="person-badge">CHIEF GUEST</span>
-                <div className="person-red-dash" aria-hidden="true" />
+                <div className="person-ribbon-wrap">
+                  <Image
+                    src="/chief_guest_ribbon.png"
+                    alt="Chief Guest"
+                    width={136}
+                    height={30}
+                    className="person-ribbon-img"
+                    priority
+                  />
+                </div>
 
                 <div className="person-avatar-wrap">
                   <Image
@@ -115,8 +123,16 @@ export default function InvitationPage() {
 
               {/* Column 2: Founder */}
               <div className="person-col">
-                <span className="person-badge">FOUNDER</span>
-                <div className="person-red-dash" aria-hidden="true" />
+                <div className="person-ribbon-wrap">
+                  <Image
+                    src="/founder_ribbon.png"
+                    alt="Founder"
+                    width={136}
+                    height={30}
+                    className="person-ribbon-img"
+                    priority
+                  />
+                </div>
 
                 <div className="person-avatar-wrap">
                   <Image
