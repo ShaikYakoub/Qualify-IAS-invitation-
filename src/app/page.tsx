@@ -96,7 +96,7 @@ export default function InvitationPage() {
               <div className="person-col">
                 <div className="person-ribbon-wrap">
                   <Image
-                    src="/chief_guest_ribbon.png"
+                    src="/chief_guest_ribbon.png?v=2"
                     alt="Chief Guest"
                     width={136}
                     height={30}
@@ -107,7 +107,7 @@ export default function InvitationPage() {
 
                 <div className="person-avatar-wrap">
                   <Image
-                    src="/ias_officer.jpg"
+                    src="/ias_officer.jpg?v=2"
                     alt="Jeenu Jaswanth Chandra - AIR 23, UPSC CSE 2025"
                     width={96}
                     height={96}
@@ -125,7 +125,7 @@ export default function InvitationPage() {
               <div className="person-col">
                 <div className="person-ribbon-wrap">
                   <Image
-                    src="/founder_ribbon.png"
+                    src="/founder_ribbon.png?v=2"
                     alt="Founder"
                     width={136}
                     height={30}
@@ -136,7 +136,7 @@ export default function InvitationPage() {
 
                 <div className="person-avatar-wrap">
                   <Image
-                    src="/founder.jpg"
+                    src="/founder.jpg?v=2"
                     alt="Ramareddipeta Rajinikanth - AIR 587, CSE 2023"
                     width={96}
                     height={96}

@@ -4,20 +4,21 @@
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  Cache-Control: public, max-age=0, must-revalidate
 
-# Next.js static assets with content hash (cache forever at edge & browser)
+# Next.js static assets with content hash (safe to cache forever)
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Static images and icons
+# Root images without content hash (must revalidate so changes reflect instantly)
 /*.png
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=0, must-revalidate
 
 /*.jpg
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=0, must-revalidate
 
 /*.svg
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=0, must-revalidate
 
 /*.webp
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=0, must-revalidate
