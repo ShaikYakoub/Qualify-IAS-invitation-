@@ -67,7 +67,7 @@ export default function ActionToolbar() {
   const handleShare = async () => {
     const shareData = {
       title: 'QUALIFY IAS - Offline Centre Inauguration Invitation',
-      text: 'You are cordially invited to the inauguration of QUALIFY IAS Offline Centre on Friday, 16th October 2026 at Ashok Nagar, Hyderabad.',
+      text: 'You are cordially invited to the inauguration of QUALIFY IAS Offline Centre on 16th October (Friday), 2026 at Ashok Nagar, Hyderabad.',
       url: typeof window !== 'undefined' ? window.location.href : '',
     };
 

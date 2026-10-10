@@ -247,7 +247,7 @@ div[data-next-badge] {
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  padding: 5px 12px 5px 5px;
+  padding: 6px 12px 6px 8px;
   background: #f9fafb;
   border: 1.2px solid rgba(0, 0, 0, 0.08);
   border-radius: 14px;
@@ -275,6 +275,7 @@ div[data-next-badge] {
   gap: 12px;
   text-align: left;
   min-width: 0;
+  flex: 1;
 }
 
 .unified-schedule-single .unified-schedule-icon-wrap {
@@ -288,15 +289,16 @@ div[data-next-badge] {
 .unified-schedule-single .unified-schedule-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-width: 0;
 }
 
 .unified-schedule-single .unified-schedule-day {
   font-family: var(--font-serif);
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 800;
   color: #000000;
-  margin: 0 0 2px 0;
+  margin: 0 0 3px 0;
   line-height: 1.25;
   white-space: nowrap;
 }

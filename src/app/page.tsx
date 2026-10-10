@@ -74,7 +74,7 @@ export default function InvitationPage() {
                   <IosCalendarIcon size={50} />
                 </div>
                 <div className="unified-schedule-info">
-                  <h4 className="unified-schedule-day">Friday, 16th October 2026</h4>
+                  <h4 className="unified-schedule-day">16th October (Friday), 2026</h4>
                   <p className="unified-schedule-time">11:00 AM Onwards</p>
                 </div>
               </div>

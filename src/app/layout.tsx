@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://qualifyias.com'),
   title: 'QUALIFY IAS - Office Inauguration Invitation',
   description:
-    'You are cordially invited to the inauguration of our new office on Friday, 16th October 2026 at Ashok Nagar, Hyderabad. Chief Guest: Jeenu Jaswanth Chandra (AIR 23, UPSC CSE 2025). Founder: Ramareddipeta Rajinikanth.',
+    'You are cordially invited to the inauguration of our new office on 16th October (Friday), 2026 at Ashok Nagar, Hyderabad. Chief Guest: Jeenu Jaswanth Chandra (AIR 23, UPSC CSE 2025). Founder: Ramareddipeta Rajinikanth.',
   openGraph: {
     title: 'QUALIFY IAS - Office Inauguration Invitation',
     description:
-      'You are cordially invited to the inauguration of our new office on Friday, 16th October 2026 at Ashok Nagar, Hyderabad.',
+      'You are cordially invited to the inauguration of our new office on 16th October (Friday), 2026 at Ashok Nagar, Hyderabad.',
     type: 'website',
     locale: 'en_IN',
     siteName: 'QUALIFY IAS',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'QUALIFY IAS - Office Inauguration Invitation',
     description:
-      'You are cordially invited to the inauguration of our new office on Friday, 16th October 2026 at Ashok Nagar, Hyderabad.',
+      'You are cordially invited to the inauguration of our new office on 16th October (Friday), 2026 at Ashok Nagar, Hyderabad.',
     images: ['/qualify_ias_logo.png'],
   },
   robots: {

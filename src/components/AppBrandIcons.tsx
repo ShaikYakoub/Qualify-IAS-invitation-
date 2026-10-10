@@ -19,7 +19,7 @@ export function IosCalendarIcon({ size = 38, className = '' }: { size?: number; 
     >
       <img
         src="/calendar_original_icon.png"
-        alt="Friday, 16th October 2026"
+        alt="16th October (Friday), 2026"
         width={size}
         height={size}
         style={{
